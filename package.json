@@ -1,0 +1,30 @@
+{
+  "name": "high-order-function-marrea",
+  "version": "1.0.0",
+  "description": "Ejercicios de la primera practica",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA.git"
+  },
+  "author": "Alejandro Marrero",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "*",
+    "gulp": "*",
+    "gulp-shell": "*",
+    "mocha": "*",
+    "should": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA/issues"
+  },
+  "homepage": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA#readme"
+}
