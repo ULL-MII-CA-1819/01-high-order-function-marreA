@@ -2,3 +2,5 @@
 = Resumen de la práctica
 
 == Eloquent Javascript: High Order Function
+
+image::https://www.bennadel.com/resources/uploads/2011/eloquent_javascript_a_modern_introduction_to_programming_by_marijn_haverbeke.jpg[Eloquent Javascript]
