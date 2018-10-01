@@ -1,0 +1,4 @@
+
+= Resumen de la práctica
+
+== Eloquent Javascript: High Order Function
