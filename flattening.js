@@ -12,3 +12,8 @@ console.log(arrays);
 let array = arrays.reduce((result, arrays) => result.concat(arrays), []);
 console.log("Resultado final" );
 console.log(array);
+
+flat = (arrays) => {
+    return arrays.reduce((result, arrays) => result.concat(arrays), []);
+}
+module.exports = flat;

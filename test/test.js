@@ -1,6 +1,6 @@
 
 // Cargamos el primer ejercicio
-const flat = require("../index.js");
+const flat = require("../flattening.js");
 const assert = require('assert');
 
 describe('Chapter 5 - High Order Functions', () => {
@@ -10,3 +10,4 @@ describe('Chapter 5 - High Order Functions', () => {
         });
     });
 });
+
