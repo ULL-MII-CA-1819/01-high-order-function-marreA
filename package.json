@@ -18,7 +18,8 @@
   "license": "ISC",
   "devDependencies": {
     "assert": "*",
-    "gulp": "*",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^6.0.0",
     "gulp-shell": "*",
     "mocha": "*",
     "should": "*"
