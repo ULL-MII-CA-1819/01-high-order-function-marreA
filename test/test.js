@@ -10,6 +10,9 @@ describe('Chapter 5 - High Order Functions', () => {
         it('Flat returns [1, 2, 3]', () => {
             assert.deepEqual(flat([[1], [2], [3]]), [1, 2, 3]);
         });
+        it('Flat returns [1, 2, 3, 4, 5, 6]', () => {
+            assert.deepEqual(flat([[1, 2], [3], [4, 5, 6]]), [1, 2, 3, 4, 5, 6]);
+        });
     });
 });
 
