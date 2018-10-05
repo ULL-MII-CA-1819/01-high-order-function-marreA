@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "istanbul cover test/test2.js"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,21 @@
   "license": "ISC",
   "devDependencies": {
     "assert": "*",
-    "gulp": "^3.9.1",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
     "gulp-mocha": "^6.0.0",
     "gulp-shell": "*",
-    "mocha": "*",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
     "should": "*"
   },
   "bugs": {
     "url": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA/issues"
   },
-  "homepage": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA#readme"
+  "homepage": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA#readme",
+  "dependencies": {
+    "blanket": "^1.2.3",
+    "gulp-minifier": "^1.2.2",
+    "mocha-suite": "^1.0.11"
+  }
 }

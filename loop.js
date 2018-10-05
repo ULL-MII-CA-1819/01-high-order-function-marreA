@@ -8,15 +8,21 @@ Your code here.
 loop(3, n => n > 0, n => n - 1, console.log);
  → 3
  → 2
- → 1 
+ → 1
 */
 
 loop = (value, test, update, body) => {
     while(test(value) == true){
         body(value);
         value = update(value);
-    } 
+    }
 };
 
 //loop(3, n => n > 0, n => n - 1, console.log);
-module.exports = loop;
+
+//let values = [1, 2, 3, 4];
+//loop(values, values => values.length >= 1, values => values = values.slice(0, values.length - 1), values => console.log(values[values.length - 1]));
+//console.log(result);
+
+
+//module.exports = loop;

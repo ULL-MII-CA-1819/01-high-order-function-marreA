@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" media="all" href="../node_modules/mocha/mocha.css">
+  </head>
+  <style>
+body {
+    background: rgba(212,228,239,1);
+    background: linear-gradient(135deg, rgba(212,228,239,1) 0%, rgba(51,204,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+  <body>
+    <div id="mocha"></div>
+    <div id="messages"></div>
+    <div id="fixtures"></div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="blanket.js"
+        data-cover-adapter="mocha-blanket.js"></script>
+    <script src="../flattening.js"></script>
+    <script src="../everything.js"></script>
+    <script src="../loop.js"></script>
+    <script src="../dominant.js"></script>
+    <script>mocha.setup('bdd')</script>
+
+    <script src="test2.js"></script>
+
+    <!-- load code you want to test here -->
+
+    <!-- load your test files here -->
+
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
