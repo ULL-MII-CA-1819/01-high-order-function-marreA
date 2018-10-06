@@ -5,7 +5,7 @@
   "main": "index.js",
   "directories": {
     "doc": "docs",
-    "test": "test"
+    "test": "docs/test"
   },
   "scripts": {
     "test": "gulp test"
@@ -23,27 +23,25 @@
     "assert": "*",
     "chai": "^4.2.0",
     "gulp": "^3.0.0",
+    "gulp-mocha": "^6.0.0",
+    "gulp-shell": "*",
     "gulp-concat": "^2.5.2",
     "gulp-minify": "0.0.5",
     "gulp-minify-css": "*",
     "gulp-minify-html": "*",
-    "gulp-mocha": "^6.0.0",
-    "gulp-shell": "*",
-    "gulp-uglify": "^3.0.1",
+    "gulp-uglify": "*",
     "gulp-util": "*",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "phantomjs": "^2.1.7",
-    "should": "*"
+    "should": "*",
+    "phantomjs": "*"
   },
   "bugs": {
     "url": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA/issues"
   },
   "homepage": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA#readme",
   "dependencies": {
-    "asciidoctor.js": "^1.5.7-rc.1",
     "gulp-minifier": "^1.2.2",
-    "mocha-suite": "^1.0.11",
-    "sinon": "^6.3.5"
+    "mocha-suite": "^1.0.11"
   }
 }

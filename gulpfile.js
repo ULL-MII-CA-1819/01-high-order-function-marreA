@@ -9,7 +9,7 @@ let minifyHTML = require('gulp-minify-html');
 
 gulp.task("default", ["test"]);
 gulp.task("test", () =>
-        gulp.src('./test/testNode.js', {read: false})
+        gulp.src('./docs/test/testNode.js', {read: false})
         .pipe(mocha({reporter: 'nyan'}))
 );
 // gulp.task("test", shell.task("mocha"));

@@ -1,10 +1,10 @@
 
 // Utilizado para nodejs
-const flat = require("../flattening.js");
-const loop = require("../loop.js");
-const every = require("../everything.js");
-const script = require("../scripts.js");
-const dominant = require("../dominant.js");
+const flat = require("../../flattening.js");
+const loop = require("../../loop.js");
+const every = require("../../everything.js");
+const script = require("../../scripts.js");
+const dominant = require("../../dominant.js");
 const assert = require('assert');
 var expect = require('chai').expect;
 
