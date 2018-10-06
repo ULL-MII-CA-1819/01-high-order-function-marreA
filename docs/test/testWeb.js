@@ -44,7 +44,7 @@ describe('Chapter 5 - High Order Functions', () => {
             let array = [1, 6, 7, 8, 9, 10];
             assert.equal(every(array, (element) => element > 2), false);
         });
-        it('Every returns false with "[1, 3, 5]"', () => {
+        it('Every returns true with "[1, 3, 5]"', () => {
             let array = [1, 3, 5];
             assert.equal(every(array, (element) => element < 10), true);
         });
@@ -52,7 +52,7 @@ describe('Chapter 5 - High Order Functions', () => {
             let array = [2, 4, 16];
             assert.equal(every(array, (element) => element < 10), false);
         });
-        it('Every returns false with "[]"', () => {
+        it('Every returns true with "[]"', () => {
             let array = [];
             assert.equal(every(array, (element) => element < 10), true);
         });
@@ -67,7 +67,7 @@ describe('Chapter 5 - High Order Functions', () => {
         it('Dominant returns ltr with "Hey, مساء الخير, acabo de escribir en otro idioma"', () => {
           assert.equal(dominantDirection("Hey, مساء الخير, acabo de escribir en otro idioma"), 'ltr');
         });
-        it('Dominant returns ltr with "من تەمەنم سی و سێ ساڵە"', () => {
+        it('Dominant returns rtl with "من تەمەنم سی و سێ ساڵە"', () => {
           assert.equal(dominantDirection("من تەمەنم سی و سێ ساڵە"), 'rtl');
         });
     });
