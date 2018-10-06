@@ -21,20 +21,21 @@
   "license": "ISC",
   "devDependencies": {
     "assert": "*",
+    "blanket": "^1.2.3",
     "chai": "^4.2.0",
     "gulp": "^3.0.0",
-    "gulp-mocha": "^6.0.0",
-    "gulp-shell": "*",
     "gulp-concat": "^2.5.2",
     "gulp-minify": "0.0.5",
     "gulp-minify-css": "*",
     "gulp-minify-html": "*",
+    "gulp-mocha": "^6.0.0",
+    "gulp-shell": "*",
     "gulp-uglify": "*",
     "gulp-util": "*",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "should": "*",
-    "phantomjs": "*"
+    "phantomjs": "*",
+    "should": "*"
   },
   "bugs": {
     "url": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA/issues"
