@@ -25,7 +25,12 @@ describe('Chapter 5 - High Order Functions', () => {
             loop(values, values => values.length >= 1, values => values = values.slice(0, values.length - 1), values => console.log(values[values.length - 1]));
             assert.deepEqual(values, [1, 2, 3, 4]);
         });
-      
+        it("Value is '4321' after loop with '[1, 2, 3, 4]'", () => {
+            let values = [1, 2, 3, 4];
+            let result = [];
+            loop(values, values => values.length >= 1, values => values = values.slice(0, values.length - 1), values => result += (values[values.length - 1]));
+            assert.deepEqual(result, '4321');
+        });
     });
 
     describe('Every', () => {

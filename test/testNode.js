@@ -24,6 +24,7 @@ describe('Chapter 5 - High Order Functions', () => {
             let values = [1, 2, 3, 4];
             loop(values, values => values.length >= 1, values => values = values.slice(0, values.length - 1), values => console.log(values[values.length - 1]));
             assert.deepEqual(values, [1, 2, 3, 4]);
+
         });
         it("Value is '4321' after loop with '[1, 2, 3, 4]'", () => {
             let values = [1, 2, 3, 4];
