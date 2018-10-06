@@ -8,6 +8,8 @@ var assert = chai.assert;
 var expect = chai.expect;/*
 var expect = require('chai').expect;
 let assert = require('chai').assert;*/
+chai.should();
+
 describe('Chapter 5 - High Order Functions', () => {
     describe('Flattening', () => {
         it('Flat returns [1, 2, 3] with "[[1], [2], [3]]"', () => {

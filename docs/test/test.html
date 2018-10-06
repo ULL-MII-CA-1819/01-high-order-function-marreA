@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mocha Tests</title>
-    <link rel="stylesheet" media="all" href="../node_modules/mocha/mocha.css">
+    <link rel="stylesheet" media="all" href="../../node_modules/mocha/mocha.css">
   </head>
   <style>
 body {
@@ -19,8 +19,8 @@ body {
     <div id="fixtures"></div>
     <script src="../../node_modules/mocha/mocha.js"></script>
     <script src="../../node_modules/chai/chai.js"></script>
-    <script src="../../node_modules/blanket/src/blanket.js"
-        data-cover-adapter="../../node_modules/blanket/src/adapters/mocha-blanket.js"></script>
+    <script src="../../blanket.js"
+        data-cover-adapter="../../mocha-blanket.js"></script>
     <script src="../../flattening.js"></script>
     <script src="../../everything.js"></script>
     <script src="../../loop.js"></script>
@@ -29,7 +29,7 @@ body {
     <script>mocha.setup('bdd')</script>
 
 
-    <script src="testWeb.js" data-cover></script>
+    <script src="testWeb.js"></script>
 
     <!-- load code you want to test here -->
 
