@@ -54,5 +54,5 @@ dominantDirection = (text) => {
   //console.log(direcciones);
   return direcciones.reduce((a, b) => a.count > b.count ? a : b).name;
 };
-
+module.exports = dominantDirection;
 //console.log(dominantDirection("Hola Mundo"));

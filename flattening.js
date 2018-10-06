@@ -16,3 +16,4 @@
 flat = (arrays) => {
     return arrays.reduce((result, arrays) => result.concat(arrays), []);
 }
+module.exports = flat;

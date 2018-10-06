@@ -22,7 +22,7 @@
   "devDependencies": {
     "assert": "*",
     "chai": "^4.2.0",
-    "gulp": "^4.0.0",
+    "gulp": "^3.0.0",
     "gulp-mocha": "^6.0.0",
     "gulp-shell": "*",
     "istanbul": "^0.4.5",
