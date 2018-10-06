@@ -6,5 +6,5 @@
 - Gulp
 - Mocha - Chai
 - Asciidoctor
-(Travis pending)
-blanket, istanbul problems
+-(Travis pending)
+- blanket, istanbul problems
