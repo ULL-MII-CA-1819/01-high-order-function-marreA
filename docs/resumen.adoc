@@ -10,3 +10,31 @@ https://ull-mii-ca-1819.github.io/01-high-order-function-marreA/test/index.html[
 https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA[Repo]
 
 Resuelva los ejercicios del Capítulo 5 de EJS: http://eloquentjavascript.net/05_higher_order.html[Higher-Order Functions]
+
+Primer Ejercicio
+Flattening
+[source, Javascript]
+----
+include::./js/flattening.js[]
+----
+
+Segundo Ejercicio
+Loop
+[source, Javascript]
+----
+include::./js/loop.js[]
+----
+
+Tercer Ejercicio
+Everything
+[source, Javascript]
+----
+include::./js/everything.js[]
+----
+
+Cuarto Ejercicio
+Dominant
+[source, Javascript]
+----
+include::./js/dominant.js[]
+----
