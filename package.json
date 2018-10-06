@@ -8,14 +8,16 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha",
-    "coverage": "istanbul cover test/test2.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA.git"
   },
-  "author": "Alejandro Marrero",
+  "contributors": [
+    "Alejandro Marrero",
+    "Ivan Garcia"
+  ],
   "license": "ISC",
   "devDependencies": {
     "assert": "*",
@@ -32,7 +34,6 @@
   },
   "homepage": "https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA#readme",
   "dependencies": {
-    "blanket": "^1.2.3",
     "gulp-minifier": "^1.2.2",
     "mocha-suite": "^1.0.11"
   }

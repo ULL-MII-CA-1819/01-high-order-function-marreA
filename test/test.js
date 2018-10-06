@@ -1,9 +1,9 @@
 
 // Utilizado para nodejs
-/*const flat = require("../flattening.js");
+const flat = require("../flattening.js");
 const loop = require("../loop.js");
 const every = require("../everything.js");
-const assert = require('assert');*/
+const assert = require('assert');
 
 
 

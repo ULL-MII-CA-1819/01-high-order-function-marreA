@@ -19,10 +19,3 @@ loop = (value, test, update, body) => {
 };
 
 //loop(3, n => n > 0, n => n - 1, console.log);
-
-//let values = [1, 2, 3, 4];
-//loop(values, values => values.length >= 1, values => values = values.slice(0, values.length - 1), values => console.log(values[values.length - 1]));
-//console.log(result);
-
-
-//module.exports = loop;
