@@ -419,4 +419,129 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer{background:none}
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
-</style></head><body class=article><div id=header><h1>Resumen de la práctica</h1></div><div id=content><div class=sect1><h2 id=_eloquent_javascript_high_order_function>Eloquent Javascript: High Order Function</h2><div class=sectionbody><div class=imageblock><div class=content><img src=https://www.bennadel.com/resources/uploads/2011/eloquent_javascript_a_modern_introduction_to_programming_by_marijn_haverbeke.jpg alt="Eloquent Javascript"></div></div></div></div></div><div id=footer><div id=footer-text>Last updated 2018-10-01 19:46:09 UTC</div></div></body></html>
+</style></head><body class=article><div id=header><h1>Resumen de la práctica</h1></div><div id=content><div class=sect1><h2 id=_eloquent_javascript_high_order_function>Eloquent Javascript: High Order Function</h2><div class=sectionbody><div class=imageblock><div class=content><img src=https://www.bennadel.com/resources/uploads/2011/eloquent_javascript_a_modern_introduction_to_programming_by_marijn_haverbeke.jpg alt="Eloquent Javascript"></div></div><div class=paragraph><p><a href=https://ull-mii-ca-1819.github.io/01-high-order-function-marreA/test/index.html>Pruebas</a> <a href=https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA>Repo @ Github</a></p></div><div class=paragraph><p>Resuelva los ejercicios del Capítulo 5 de EJS: <a href=http://eloquentjavascript.net/05_higher_order.html>Higher-Order Functions</a></p></div><div class=paragraph><p>Primer Ejercicio Flattening</p></div><div class=listingblock><div class=content><pre class=highlight><code class=language-Javascript data-lang=Javascript>// Flattening
+// Use the reduce method in combination with the concat method to “flatten” an array of arrays into a single array that has all the elements of the original arrays.
+//let arrays = [[1, 2, 3], [4, 5], [6]];
+//console.log("Datos iniciales: ");
+//console.log(arrays);
+// Invocamos al metodo reduce del objeto array que recibe como argumento una callback
+// en este caso, una funcion lambda que toma dos argumentos:
+//  - result: array resultante de la operacion
+//  - arrays: array de arrays
+// el bloque de la función concatena los arrays internos de la variable "arrays"
+// dentro del nuevo array "result"
+ //let array = arrays.reduce((result, arrays) =&gt; result.concat(arrays), []);
+ //console.log("Resultado final" );
+ //console.log(array);
+
+flat = (arrays) =&gt; {
+    return arrays.reduce((result, arrays) =&gt; result.concat(arrays), []);
+}
+module.exports = flat;</code></pre></div></div><div class=paragraph><p>Segundo Ejercicio Loop</p></div><div class=listingblock><div class=content><pre class=highlight><code class=language-Javascript data-lang=Javascript>/* Your own loop
+Write a higher-order function loop that provides something like a for loop statement. It takes a value, a test function, an update function, and a body function. Each iteration, it first runs the test function on the current loop value and stops if that returns false. Then it calls the body function, giving it the current value. Finally, it calls the update function to create a new value and starts from the beginning.
+
+When defining the function, you can use a regular loop to do the actual looping.
+
+Your code here.
+
+loop(3, n =&gt; n &gt; 0, n =&gt; n - 1, console.log);
+ → 3
+ → 2
+ → 1
+*/
+
+loop = (value, test, update, body) =&gt; {
+    while(test(value)){
+        body(value);
+        value = update(value);
+    }
+};
+
+//loop(3, n =&gt; n &gt; 0, n =&gt; n - 1, console.log);
+module.exports = loop;</code></pre></div></div><div class=paragraph><p>Tercer Ejercicio Everything</p></div><div class=listingblock><div class=content><pre class=highlight><code class=language-Javascript data-lang=Javascript>/* Everything
+Analogous to the some method, arrays also have an every method. This one returns true when the given function returns true for every element in the array. In a way, some is a version of the || operator that acts on arrays, and every is like the &amp;&amp; operator.
+
+Implement every as a function that takes an array and a predicate function as parameters. Write two versions, one using a loop and one using the some method.
+
+function every(array, test) {
+ Your code here.
+}
+
+console.log(every([1, 3, 5], n =&gt; n &lt; 10));
+ → true
+console.log(every([2, 4, 16], n =&gt; n &lt; 10));
+→ false
+console.log(every([], n =&gt; n &lt; 10));
+ → true */
+
+every = (array, test) =&gt; {
+    let result = true;
+    array.forEach(element =&gt; {
+        if(!test(element))
+            result = false;
+            return;
+    });
+    return result;
+};
+
+//console.log(every([1, 3, 5], n =&gt; n &lt; 10));
+//console.log(every([2, 4, 16], n =&gt; n &lt; 10));
+//console.log(every([], n =&gt; n &lt; 10));
+module.exports = every;</code></pre></div></div><div class=paragraph><p>Cuarto Ejercicio Dominant</p></div><div class=listingblock><div class=content><pre class=highlight><code class=language-Javascript data-lang=Javascript>/* Dominant writing direction
+Write a function that computes the dominant writing direction in a string of text. Remember that each script object has a direction property that can be "ltr" (left to right), "rtl" (right to left), or "ttb" (top to bottom).
+
+The dominant direction is the direction of a majority of the characters that have a script associated with them.
+The characterScript and countBy functions defined earlier in the chapter are probably useful here.
+
+You again have to count characters by a criterion based on characterScript and then filter out the part of the result that refers
+to uninteresting (script-less) characters.
+
+Finding the direction with the highest character count can be done with reduce.
+function dominantDirection(text) {
+   Your code here.
+}
+
+console.log(dominantDirection("Hello!"));
+ → ltr
+console.log(dominantDirection("Hey, مساء الخير"));
+ → rtl
+ */
+
+ function characterScript(code) {
+   for (let script of SCRIPTS) {
+     if (script.ranges.some(([from, to]) =&gt; {
+       return code &gt;= from &amp;&amp; code &lt; to;
+     })) {
+       return script;
+     }
+   }
+   return null;
+ }
+
+ function countBy(items, groupName) {
+  let counts = [];
+  for (let item of items) {
+    let name = groupName(item);
+    let known = counts.findIndex(c =&gt; c.name == name);
+    if (known == -1) {
+      counts.push({name, count: 1});
+    } else {
+      counts[known].count++;
+    }
+  }
+  return counts;
+}
+
+dominantDirection = (text) =&gt; {
+  //Para el conjunto de palabras, se recoge la direccion que corresponde
+  let direcciones = countBy(text, char =&gt; {
+    let script = characterScript(char.codePointAt(0));
+    return script ? script.direction : "none";
+  }).filter(({name}) =&gt; name != "none");
+
+  if (direcciones.length == 0) return "ltr";
+  //console.log(direcciones);
+  return direcciones.reduce((a, b) =&gt; a.count &gt; b.count ? a : b).name;
+};
+module.exports = dominantDirection;
+//console.log(dominantDirection("Hola Mundo"));</code></pre></div></div></div></div></div><div id=footer><div id=footer-text>Last updated 2018-10-08 09:18:48 Hora estßndar romance</div></div></body></html>
