@@ -5,9 +5,8 @@
 
 image::https://www.bennadel.com/resources/uploads/2011/eloquent_javascript_a_modern_introduction_to_programming_by_marijn_haverbeke.jpg[Eloquent Javascript]
 
-https://ull-mii-ca-1819.github.io/01-high-order-function-marreA/[Web]
 https://ull-mii-ca-1819.github.io/01-high-order-function-marreA/test/index.html[Pruebas]
-https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA[Repo]
+https://github.com/ULL-MII-CA-1819/01-high-order-function-marreA[Repo @ Github]
 
 Resuelva los ejercicios del Capítulo 5 de EJS: http://eloquentjavascript.net/05_higher_order.html[Higher-Order Functions]
 
